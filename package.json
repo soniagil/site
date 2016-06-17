@@ -1,0 +1,23 @@
+{
+  "name": "sgbenitez",
+  "version": "0.1.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soniagil/site.git"
+  },
+  "author": "Sonia Gil Benítez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soniagil/site/issues"
+  },
+  "homepage": "https://github.com/soniagil/site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "normalize-scss": "^5.0.3"
+  }
+}

@@ -1,0 +1,118 @@
+@import "node_modules/normalize-scss/sass/_normalize.scss";
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+body {
+	font-family: 'Quicksand', serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.title {
+	display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 550px;
+    p {
+    	font-size: 1.3em;
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+    }
+}
+
+.content {
+	position: relative;
+	> p {
+	    bottom: 35px;
+	    position: absolute;
+	    margin: 0;
+	}
+	.title-name-first {
+		left: -105px;
+    }
+
+    .title-name-second {
+    	right: -85px;
+    }
+}
+
+.figure-image {
+	width: 240px; 
+	height: 240px;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid black;
+	> img {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	    position: absolute;
+        width: 220px;
+	    left: 25px;
+	    top: -15px;
+	}
+}
+
+.btn {
+	background: black;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 3px;
+}
+.btn-resume {
+	padding: 15px 60px;
+}
+
+nav {
+	margin-top: 100px;
+	.contact p {
+		display: flex;
+		justify-content: space-around;
+		a {
+			color: black;
+		}
+	}
+}
+
+.title-name {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.content > p {
+		display: none;
+	}
+
+	.figure-image {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 40px;
+		> img {
+			width: 185px;
+			left: 20px;
+		}
+	}
+
+	.title-name {
+		display: inline-block;
+	}
+
+	nav {
+		margin-top: 35px;
+		.contact p {
+			font-size: 1.5em;
+		}
+	}
+}
